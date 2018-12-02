@@ -18,17 +18,22 @@
     </properties>
 
     <dependencies>
+
         <!--Smart Framework-->
         <dependency>
             <groupId>io.github.futurewl</groupId>
             <artifactId>smart-framework</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+
     </dependencies>
 
     <build>
+
         <plugins>
+
             <!--Compile-->
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -38,7 +43,9 @@
                     <target>1.6</target>
                 </configuration>
             </plugin>
+
             <!--Test-->
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
@@ -47,7 +54,9 @@
                     <skipTests>true</skipTests>
                 </configuration>
             </plugin>
+
             <!--Tomcat-->
+
             <plugin>
                 <groupId>org.apache.tomcat.maven</groupId>
                 <artifactId>tomcat7-maven-plugin</artifactId>
@@ -56,8 +65,9 @@
                     <path>/${project.artifactId}</path>
                 </configuration>
             </plugin>
-        </plugins>
-    </build>
 
+        </plugins>
+
+    </build>
 
 </project>

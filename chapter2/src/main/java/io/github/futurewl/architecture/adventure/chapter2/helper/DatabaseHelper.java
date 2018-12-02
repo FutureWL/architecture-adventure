@@ -109,7 +109,7 @@ public class DatabaseHelper {
             Connection connection = getConnection();
             entityList = QUERY_RUNNER.query(connection, sql, new BeanListHandler<T>(entityClass), params);
         } catch (SQLException e) {
-            LOGGER.error("query entity list failure", e);
+            LOGGER.error("query model list failure", e);
             throw new RuntimeException(e);
         } finally {
             closeConnection();
@@ -132,7 +132,7 @@ public class DatabaseHelper {
             Connection connection = getConnection();
             entity = QUERY_RUNNER.query(connection, sql, new BeanHandler<T>(entityClass), params);
         } catch (SQLException e) {
-            LOGGER.error("query entity failure", e);
+            LOGGER.error("query model failure", e);
             throw new RuntimeException(e);
         } finally {
             closeConnection();
@@ -210,7 +210,7 @@ public class DatabaseHelper {
     public static <T> boolean insertEntity(Class<T> entityClass, Map<String, Object> fieldMap) {
 
         if (CollectionUtil.isEmpty(fieldMap)) {
-            LOGGER.error("can not insert entity: fieldMap si empty");
+            LOGGER.error("can not insert model: fieldMap si empty");
             return false;
         }
 
@@ -240,7 +240,7 @@ public class DatabaseHelper {
     public static <T> boolean updateEntity(Class<T> entityClass, long id, Map<String, Object> filedMap) {
 
         if (CollectionUtil.isEmpty(filedMap)) {
-            LOGGER.error("can not update entity: fieldMap is empty");
+            LOGGER.error("can not update model: fieldMap is empty");
             return false;
         }
 
