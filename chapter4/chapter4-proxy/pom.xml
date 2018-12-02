@@ -3,11 +3,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+
     <parent>
         <groupId>io.github.futurewl</groupId>
         <artifactId>chapter4</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
+
     <artifactId>chapter4-proxy</artifactId>
     <packaging>war</packaging>
 
@@ -16,16 +18,21 @@
     </properties>
 
     <dependencies>
+
         <dependency>
             <groupId>cglib</groupId>
             <artifactId>cglib</artifactId>
             <version>3.2.7</version>
         </dependency>
+
     </dependencies>
 
     <build>
+
         <plugins>
+
             <!--Compile-->
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -35,7 +42,9 @@
                     <target>1.6</target>
                 </configuration>
             </plugin>
+
             <!--Test-->
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
@@ -44,7 +53,9 @@
                     <skipTests>true</skipTests>
                 </configuration>
             </plugin>
+
             <!--Tomcat-->
+
             <plugin>
                 <groupId>org.apache.tomcat.maven</groupId>
                 <artifactId>tomcat7-maven-plugin</artifactId>
@@ -53,8 +64,9 @@
                     <path>/${project.artifactId}</path>
                 </configuration>
             </plugin>
-        </plugins>
-    </build>
 
+        </plugins>
+
+    </build>
 
 </project>
