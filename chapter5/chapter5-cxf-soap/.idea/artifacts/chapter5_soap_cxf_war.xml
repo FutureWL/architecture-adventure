@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="chapter5-soap-cxf:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="chapter5-soap-cxf-1.0.0.war">
+      <element id="artifact" artifact-name="chapter5-soap-cxf:war exploded" />
+    </root>
+  </artifact>
+</component>

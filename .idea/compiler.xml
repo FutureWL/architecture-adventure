@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="chapter1" />
+        <module name="chapter2" />
+        <module name="chapter3" />
+        <module name="chapter4-aop" />
+        <module name="chapter4-app" />
+        <module name="chapter4-proxy" />
+        <module name="chapter4-threadlocal" />
+        <module name="chapter5-app" />
+        <module name="chapter5-cxf-rest" />
+        <module name="chapter5-cxf-soap" />
+        <module name="chapter5-cxf-soap-spring" />
+        <module name="chapter5-shiro" />
+        <module name="chapter5-shiro-web" />
+        <module name="smart-framework" />
+        <module name="smart-plugin-rest" />
+        <module name="smart-plugin-security" />
+        <module name="smart-plugin-soap" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="architecture-adventure" target="1.5" />
+      <module name="chapter1" target="1.6" />
+      <module name="chapter2" target="1.6" />
+      <module name="chapter3" target="1.6" />
+      <module name="chapter4" target="1.5" />
+      <module name="chapter4 (1) (org.smart4j)" target="1.6" />
+      <module name="chapter4-aop" target="1.6" />
+      <module name="chapter4-app" target="1.6" />
+      <module name="chapter4-proxy" target="1.6" />
+      <module name="chapter4-threadlocal" target="1.6" />
+      <module name="chapter5" target="1.5" />
+      <module name="chapter5 (1)" target="1.6" />
+      <module name="chapter5-app" target="1.6" />
+      <module name="chapter5-cxf-rest" target="1.6" />
+      <module name="chapter5-cxf-soap" target="1.6" />
+      <module name="chapter5-cxf-soap-spring" target="1.6" />
+      <module name="chapter5-shiro" target="1.6" />
+      <module name="chapter5-shiro-web" target="1.6" />
+      <module name="smart-framework" target="1.6" />
+      <module name="smart-plugin-rest" target="1.6" />
+      <module name="smart-plugin-security" target="1.6" />
+      <module name="smart-plugin-soap" target="1.6" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

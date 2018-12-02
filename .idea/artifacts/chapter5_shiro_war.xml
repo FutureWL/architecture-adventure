@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="chapter5-shiro:war">
+    <output-path>$PROJECT_DIR$/chapter5/chapter5-shiro/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>chapter5-shiro</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="chapter5-shiro-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="chapter5-shiro:war exploded" />
+    </root>
+  </artifact>
+</component>

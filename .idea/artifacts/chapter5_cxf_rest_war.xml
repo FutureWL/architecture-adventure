@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="chapter5-cxf-rest:war">
+    <output-path>$PROJECT_DIR$/chapter5/chapter5-cxf-rest/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>chapter5-cxf-rest</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="chapter5-cxf-rest-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="chapter5-cxf-rest:war exploded" />
+    </root>
+  </artifact>
+</component>

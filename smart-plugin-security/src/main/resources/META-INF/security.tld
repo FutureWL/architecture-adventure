@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<taglib xmlns="http://java.sun.com/xml/ns/javaee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd"
+        version="2.1">
+    <description>Security JSP Tag</description>
+    <tlib-version>1.1</tlib-version>
+    <short-name>security</short-name>
+    <uri>/security</uri>
+
+    <!-- ================================================== ?? ================================================== -->
+
+    <tag>
+        <description>?????????????????? ? ????</description>
+        <name>user</name>
+        <tag-class>org.apache.shiro.web.tags.UserTag</tag-class>
+        <body-content>JSP</body-content>
+    </tag>
+
+    <tag>
+        <description>?????????????????? ? ????????????</description>
+        <name>guest</name>
+        <tag-class>org.apache.shiro.web.tags.GuestTag</tag-class>
+        <body-content>JSP</body-content>
+    </tag>
+
+    <tag>
+        <description>???????????</description>
+        <name>authenticated</name>
+        <tag-class>org.apache.shiro.web.tags.AuthenticatedTag</tag-class>
+        <body-content>JSP</body-content>
+    </tag>
+
+    <tag>
+        <description>???????????</description>
+        <name>notAuthenticated</name>
+        <tag-class>org.apache.shiro.web.tags.NotAuthenticatedTag</tag-class>
+        <body-content>JSP</body-content>
+    </tag>
+
+    <tag>
+        <description>???????????</description>
+        <name>principal</name>
+        <tag-class>org.apache.shiro.web.tags.PrincipalTag</tag-class>
+        <body-content>JSP</body-content>
+        <attribute>
+            <name>type</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>property</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+        <attribute>
+            <name>defaultValue</name>
+            <required>false</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+
+    <!-- ================================================== ?? ================================================== -->
+
+    <tag>
+        <description>??????????????</description>
+        <name>hasRole</name>
+        <tag-class>org.apache.shiro.web.tags.HasRoleTag</tag-class>
+        <body-content>JSP</body-content>
+        <attribute>
+            <name>name</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+
+    <tag>
+        <description>??????????????</description>
+        <name>lacksRole</name>
+        <tag-class>org.apache.shiro.web.tags.LacksRoleTag</tag-class>
+        <body-content>JSP</body-content>
+        <attribute>
+            <name>name</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+
+    <tag>
+        <description>????????????????????????????????</description>
+        <name>hasAnyRoles</name>
+        <tag-class>org.apache.shiro.web.tags.HasAnyRolesTag</tag-class>
+        <body-content>JSP</body-content>
+        <attribute>
+            <name>name</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+
+    <tag>
+        <description>????????????????????????????????</description>
+        <name>hasAllRoles</name>
+        <tag-class>org.smart4j.plugin.security.tag.HasAllRolesTag</tag-class>
+        <body-content>JSP</body-content>
+        <attribute>
+            <name>name</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+
+    <!-- ================================================== ?? ================================================== -->
+
+    <tag>
+        <description>??????????????</description>
+        <name>hasPermission</name>
+        <tag-class>org.apache.shiro.web.tags.HasPermissionTag</tag-class>
+        <body-content>JSP</body-content>
+        <attribute>
+            <name>name</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+
+    <tag>
+        <description>??????????????</description>
+        <name>lacksPermission</name>
+        <tag-class>org.apache.shiro.web.tags.LacksPermissionTag</tag-class>
+        <body-content>JSP</body-content>
+        <attribute>
+            <name>name</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+
+    <tag>
+        <description>????????????????????????????????</description>
+        <name>hasAnyPermissions</name>
+        <tag-class>org.smart4j.plugin.security.tag.HasAnyPermissionsTag</tag-class>
+        <body-content>JSP</body-content>
+        <attribute>
+            <name>name</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+
+    <tag>
+        <description>????????????????????????????????</description>
+        <name>hasAllPermissions</name>
+        <tag-class>org.smart4j.plugin.security.tag.HasAllPermissionsTag</tag-class>
+        <body-content>JSP</body-content>
+        <attribute>
+            <name>name</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+
+</taglib>

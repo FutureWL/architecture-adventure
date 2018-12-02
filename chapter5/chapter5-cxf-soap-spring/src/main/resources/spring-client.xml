@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jaxws="http://cxf.apache.org/jaxws"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://cxf.apache.org/jaxws http://cxf.apache.org/schemas/jaxws.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:component-scan base-package="org.smart4j.chapter5.cxf.wss4j"/>
+
+    <bean id="wss4jOutInterceptor" class="org.apache.cxf.ws.security.wss4j.WSS4JOutInterceptor">
+        <constructor-arg>
+            <map>
+                <!--用户认证（明文密码）-->
+                <entry key="action" value="UsernameToken"/>
+                <entry key="user" value="client"/>
+                <entry key="passwordType" value="PasswordText"/>
+                <entry key="passwordCallbackRef" value-ref="clientPasswordCallback"/>
+            </map>
+        </constructor-arg>
+    </bean>
+
+    <!--<bean id="factoryBean" class="org.apache.cxf.jaxws.JaxWsProxyFactoryBean">-->
+    <!--<property name="serviceClass" value="org.smart4j.chapter5.cxf.HelloService"/>-->
+    <!--<property name="address" value="http://localhost:8080/ws/soap/hello"/>-->
+    <!--</bean>-->
+
+    <!--<bean id="helloService" factory-bean="factoryBean" factory-method="create"/>-->
+
+    <jaxws:client id="helloService" serviceClass="org.smart4j.chapter5.cxf.HelloService"
+                  address="http://localhost:8080/ws/soap/hello">
+        <jaxws:outInterceptors>
+            <ref bean="wss4jOutInterceptor"/>
+        </jaxws:outInterceptors>
+    </jaxws:client>
+</beans>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/architecture-adventure.iml" filepath="$PROJECT_DIR$/architecture-adventure.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chapter1/chapter1.iml" filepath="$PROJECT_DIR$/chapter1/chapter1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chapter2/chapter2.iml" filepath="$PROJECT_DIR$/chapter2/chapter2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chapter3/chapter3.iml" filepath="$PROJECT_DIR$/chapter3/chapter3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chapter4/chapter4.iml" filepath="$PROJECT_DIR$/chapter4/chapter4.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chapter4/chapter4-aop/chapter4-aop.iml" filepath="$PROJECT_DIR$/chapter4/chapter4-aop/chapter4-aop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chapter4/chapter4-app/chapter4-app.iml" filepath="$PROJECT_DIR$/chapter4/chapter4-app/chapter4-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chapter4/chapter4-proxy/chapter4-proxy.iml" filepath="$PROJECT_DIR$/chapter4/chapter4-proxy/chapter4-proxy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chapter4/chapter4-threadlocal/chapter4-threadlocal.iml" filepath="$PROJECT_DIR$/chapter4/chapter4-threadlocal/chapter4-threadlocal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chapter5/chapter5.iml" filepath="$PROJECT_DIR$/chapter5/chapter5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chapter5/chapter5-app/chapter5-app.iml" filepath="$PROJECT_DIR$/chapter5/chapter5-app/chapter5-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chapter5/chapter5-cxf-rest/chapter5-cxf-rest.iml" filepath="$PROJECT_DIR$/chapter5/chapter5-cxf-rest/chapter5-cxf-rest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chapter5/chapter5-cxf-soap/chapter5-cxf-soap.iml" filepath="$PROJECT_DIR$/chapter5/chapter5-cxf-soap/chapter5-cxf-soap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chapter5/chapter5-cxf-soap-spring/chapter5-cxf-soap-spring.iml" filepath="$PROJECT_DIR$/chapter5/chapter5-cxf-soap-spring/chapter5-cxf-soap-spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chapter5/chapter5-shiro/chapter5-shiro.iml" filepath="$PROJECT_DIR$/chapter5/chapter5-shiro/chapter5-shiro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chapter5/chapter5-shiro-web/chapter5-shiro-web.iml" filepath="$PROJECT_DIR$/chapter5/chapter5-shiro-web/chapter5-shiro-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/smart-framework/smart-framework.iml" filepath="$PROJECT_DIR$/smart-framework/smart-framework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/smart-plugin-rest/smart-plugin-rest.iml" filepath="$PROJECT_DIR$/smart-plugin-rest/smart-plugin-rest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/smart-plugin-security/smart-plugin-security.iml" filepath="$PROJECT_DIR$/smart-plugin-security/smart-plugin-security.iml" />
+      <module fileurl="file://$PROJECT_DIR$/smart-plugin-soap/smart-plugin-soap.iml" filepath="$PROJECT_DIR$/smart-plugin-soap/smart-plugin-soap.iml" />
+    </modules>
+  </component>
+</project>

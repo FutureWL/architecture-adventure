@@ -1,0 +1,29 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="chapter4-proxy:war exploded">
+    <output-path>$PROJECT_DIR$/chapter4/chapter4-proxy/target/chapter4-proxy-1.0-SNAPSHOT</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>chapter4-proxy</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="chapter4-proxy" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: cglib:cglib:3.2.7" />
+          <element id="library" level="project" name="Maven: org.ow2.asm:asm:6.2" />
+          <element id="library" level="project" name="Maven: org.apache.ant:ant:1.10.3" />
+          <element id="library" level="project" name="Maven: org.apache.ant:ant-launcher:1.10.3" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/chapter4/chapter4-proxy/target/chapter4-proxy-1.0-SNAPSHOT/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="chapter4-proxy/web/Web" />
+    </root>
+  </artifact>
+</component>
